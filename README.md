@@ -15,8 +15,8 @@ The **Simple Video Downloader** is a Python script that allows you to easily dow
 2. **Enter the Video URL**:
    - You will be prompted to enter the URL of the video you want to download. Paste the link and press `ENTER`.
 
-3. **Select Download Options**:
-   - When prompted for a format, simply press `ENTER` to use the default settings, or specify a format code if needed.
+3. **Enter File Name**:
+   - When prompted for a name, simply put the name for the video, then press `ENTER`
 
 4. **Download**:
    - The download process will start automatically. Please wait for the download to complete.
