@@ -1,4 +1,4 @@
-# Simple Video Downloader
+# Simple Video Downloader using Python
 
 ## Overview
 
