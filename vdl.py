@@ -1,4 +1,4 @@
-#A Simple Video Downloader (°-°)
+# A Simple Video Downloader (°-°)
 
 import yt_dlp
 
@@ -7,6 +7,10 @@ def download_video(url, output_path='downloads', file_name=None, format_code=Non
         'format': format_code if format_code else 'bestvideo+bestaudio/best',
         'outtmpl': f'{output_path}/{file_name}.%(ext)s' if file_name else f'{output_path}/%(title)s.%(ext)s',
         'merge_output_format': 'mp4',
+        'postprocessors': [{
+            'key': 'FFmpegVideoConvertor',
+            'preferedformat': 'mp4',  
+        }],
     }
     
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
